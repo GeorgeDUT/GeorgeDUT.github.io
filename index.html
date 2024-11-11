@@ -67,6 +67,17 @@
         </ul>
     </section>
 
+     <div id="publications"></div>
+    <!-- JavaScript to load the external file -->
+    <script>
+        fetch("pubconf.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("publications").innerHTML = data;
+            })
+            .catch(error => console.error('Error loading publications:', error));
+    </script>
+
     <!-- Publications -->
     <section class="publications">
         <h2>Publications conference</h2>
