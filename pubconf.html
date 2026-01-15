@@ -1,40 +1,56 @@
 <!-- Publications -->
 <style>
 .publications {
-    font-size: 0.9em;
-    line-height: 1.2;
+    font-size: 0.95em; /* 稍微增大字体 */
+    line-height: 1.4; /* 增加行高，提高可读性 */
     margin: 0;
-    padding: 0;
+    padding: 0 15px; /* 左右增加内边距 */
 }
 .publications h2 {
-    margin: 0 0 10px 0;
-    font-size: 1.3em;
+    margin: 0 0 15px 0;
+    font-size: 1.4em;
+    color: #222;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e0e0e0;
 }
-.year-group {
-    margin-bottom: 8px;
+    .year-group {
+    margin-bottom: 12px; /* 增加年份间距 */
 }
-    .year-group h3 {
-    margin: 10px 0 4px 0;
-    font-size: 1.1em;
+.year-group h3 {
+    margin: 12px 0 6px 0; /* 增加上下间距 */
+    font-size: 1.15em;
     color: #333;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 2px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 4px;
 }
 .publication-item {
-    margin: 0 0 4px 15px;
+    margin: 0 0 8px 20px; /* 增加左边距和底部间距 */
     padding: 0;
 }
 .publication-item p {
     margin: 0;
+    padding: 2px 0; /* 段落增加上下内边距 */
 }
-.publication-item small {
-    font-size: 0.85em;
+    .publication-item small {
+    font-size: 0.9em; /* 稍微增大小字体 */
     color: #444;
-    line-height: 1.3;
+    line-height: 1.4; /* 增加行高 */
+    display: block; /* 确保独占一行 */
+}
+.publication-item small::before {
+    content: "• "; /* 添加项目符号 */
+    color: #666;
+    font-weight: bold;
+    margin-right: 5px;
 }
 /* 移除hr的样式 */
 .publications hr {
     display: none;
+}
+/* 添加悬停效果提高交互性 */
+.publication-item:hover {
+    background-color: #f9f9f9;
+    border-radius: 3px;
 }
 </style>
 
